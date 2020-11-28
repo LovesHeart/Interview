@@ -1,0 +1,56 @@
+<html>
+    <style>
+        body {
+            min-width: 550px;
+        }
+
+        #header{
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        #footer{
+            text-align: center;
+            background-color: #f1f1f1;
+            clear: both;
+        }
+
+        #container{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        #container .column{
+            float: left;
+        }
+
+        #center{
+            background-color: yellow;
+            clear: both;
+            width:100%;
+        }
+
+        #left{
+            width: 100px;
+            margin-left: -100%;
+            position: relative;
+            right:100px;
+            background-color: red;
+        }
+
+        #right{
+            width:100px;
+            margin-right:-100px;
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <div id="header">this is header</div>
+        <div id="container">
+            <div id="center" class="column">this is center</div>
+            <div id="left" class="column">this is left</div>
+            <div id="right" class="column">this is right</div>
+        </div>
+        <div id="footer">this is footer</div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <!--希望用CSS和HTML实现一个三列布局要求： 左右各留100px，中间填满-->
+    <style>
+
+        .container{
+            padding-left: 100px;
+            padding-right: 100px;
+            width:600px;
+        }
+
+        .container .left{
+            position: relative;
+            left:100px;
+            margin-left: -100%;
+            width: 100px;
+            background-color: blueviolet;
+        }
+
+        .container .center{
+            background-color: black ;
+            width: 400px;
+            clear: both;
+        }
+
+        .container .right{
+            margin-right: -100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        .col{
+            float: left;
+            height: 200px;
+        }
+
+    </style>
+    <body>
+        <div class="container ">
+            <div class='center col'></div>
+            <div class='left col'></div>
+            <div class='right col'></div>
+        </div>
+    </body>
+</html>
